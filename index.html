@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Construction </title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="container-fluid headerShadow sticky-top">
+      <div class="row">
+        <div class="col-11 mx-auto max-width py-3">
+          <div class="headerContentWrap text-uppercase ">
+            <a href="/" class="logoWrap animate__animated animate__lightSpeedInLeft"
+              > <span>cons</span>truction </a>
+            <ul id="navigationSideBar" class="headerNav animate__animated animate__lightSpeedInRight">
+              <span onclick="closeNav()" class="navClose">X</span>
+              <li><a href="/">home</a></li>
+              <li><a href="/">about</a></li>
+              <li><a href="/">Services</a></li>
+              <li><a href="/">Portfolio</a></li>
+              <li><a href="/">team</a></li>
+              <li><a href="/">contact</a></li>
+            </ul>
+            <img
+              onclick="openNav()"
+              class="headerMenuBtn"
+              src="./img/menu.png"
+              alt="menu"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- banner slider -->
+    <section class="container-fluid bannerSlider">
+      <div class="row">
+        <div class="col-12 mx-auto max-width p-0">
+          <div id="carouselExampleDark" class="carousel carousel-light slide " data-bs-ride="carousel">
+            <div class="carousel-indicators ">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active animate__animated animate__fadeInLeftBig animate__slow" aria-current="true"
+                aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" class="animate__animated animate__fadeInDownBig animate__slow"></button>
+              <button type="button" class="animate__animated animate__fadeInRightBig animate__slow" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active " data-bs-interval="10000">
+                <img src="./img/home-1.jpg" class="d-block w-100  animate__animated animate__rotateInUpLeft" alt="...">
+                <div class="carousel-caption d-none d-sm-block text-light animate__animated animate__zoomIn animate__slow">
+                  <h5>Your Dream House</h5>
+                  <p>Some representative placeholder content Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, aperiam.</p>
+                  <a href="#" class="myBtn">Learn More</a>
+                </div>
+              </div>
+              <div class="carousel-item  " data-bs-interval="2000">
+                <img src="./img/home-2.jpg" class="d-block w-100  animate__animated animate__rotateInDownLeft" alt="...">
+                <div class="carousel-caption d-none d-sm-block text-light animate__animated animate__zoomIn animate__slow">
+                  <h5>Always Dedicated</h5>
+                  <p>Some representative placeholder content dolor ipsum beatae autem libero minus dolores ullam exercitationem molestiae!</p>
+                  <a href="#" class="myBtn ">Learn More</a>
+                </div>
+                
+              </div>
+              <div class="carousel-item">
+                <img src="./img/home-3.jpg" class="d-block w-100 animate__animated animate__rotateIn" alt="...">
+                <div class="carousel-caption d-none d-sm-block text-light animate__animated animate__zoomIn animate__slow">
+                  <h5>True Construction</h5>
+                  <p>Some representative placeholder content neque error quas repellendus officiis iste cumque ut natus..</p>
+                  <a href="#" class="myBtn">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev animate__animated animate__zoomInLeft animate__slower" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next animate__animated animate__zoomInRight animate__slower" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner slider end -->
+
+
+    <!-- about start -->
+    <section class="container-fluid about py-5">
+      <div class="row">
+        <div class="col-11 mx-auto max-width py-4">
+          <div class="row py-3 align-items-center justify-content-center">
+            <div class="col-lg-4 col-md-12 col-12">
+              <div class="aboutImg text-center ">
+                <img src="img/about.jpg" alt="" class="img-fluid animate__animated animate__shakeY animate__slower  animate__infinite">
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-5">
+              <div class="aboutText">
+                <h2 class="aboutHead ani_fadeInDown aniUtil_dramatic">We Provide the Best Quality <span> Services Ever</span> </h2>
+                <p class="aboutPara ani_fadeInUp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, labore reiciendis. Assumenda eos quod animi!
+                  Soluta nesciunt inventore dolores excepturi provident, culpa beatae tempora, explicabo corporis quibusdam
+                  corrupti. Autem, quaerat. Assumenda quo aliquam vel, nostrum explicabo ipsum dolor, ipsa perferendis porro
+                  doloribus obcaecati placeat natus iste odio est non earum?</p>
+                <a href="#" class="myBtn ani_zoomIn">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about one end -->
+
+    <!-- service start -->
+    <section class="container-fluid services">
+      <div class="row">
+        <div class="col-11 mx-auto max-width py-4">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="sectionHeader text-center pb-5 ani_rubberBand animate__slow">
+                <h2>Our Services</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quo.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-12 col-lg-4">
+              <div class="card text-white text-center bg-dark pb-2 ani_rotateInDownLeft animate__slow	">
+                <div class="card-body">
+                  <i class="bi bi-laptop"></i>
+                  <h3 class="card-title">Best Quality</h3>
+                  <p class="lead cardPara  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias
+                    iste. Accusantium?</p>
+                  <button class="myBtn">Read More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-4">
+              <div class="card text-dark text-center bg-light pb-2 ani_rotateIn animate__slow	">
+                <div class="card-body ">
+                  <i class="bi bi-journal"></i>
+                  <h3 class="card-title">Sustainability</h3>
+                  <p class="lead cardPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias
+                    iste. Accusantium?</p>
+                  <button class="myBtn">Read More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-4">
+              <div class="card text-white text-center bg-dark pb-2 ani_rotateInDownRight animate__slow	">
+                <div class="card-body">
+                  <i class="bi bi-intersect"></i>
+                  <h3 class="card-title">Integrity</h3>
+                  <p class="lead cardPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias
+                    iste. Accusantium?</p>
+                  <button class="myBtn">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- service end -->
+
+
+    
+
+    <!-- project start -->
+    <section class="container-fluid project py-5 mt-5">
+      <div class="row">
+        <div class="col-11 mx-auto max-width py-4">
+          <div class="row">
+            <div class="col-md-12">
+              <div class=" text-center pb-5 ani_flipInY animate__slower	">
+                <h2>Our Projects</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quo.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-12 col-lg-4 ">
+              <div class="card text-white text-center bg-dark pb-2 ani_rotateInDownRight">
+                <div class="card-body ">
+                  <div class="img-area mb-4 ">
+                    <img src="./img/project-1.jpg"  class="img-fluid ani_headShake aniUtil_onMouse " alt="">
+                  </div>
+                  <h3 class="card-title ">Building Make</h3>
+                  <p class="lead cardPara ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias
+                    iste. Accusantium?</p>
+                  <button class="myBtn">Read More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-4">
+              <div class="card text-dark text-center bg-white pb-2 ani_jackInTheBox">
+                <div class="card-body">
+                  <div class="img-area mb-4">
+                    <img src="./img/project-2.jpg"  class="img-fluid ani_headShake aniUtil_onMouse" alt="">
+                  </div>
+                  <h3 class="card-title">Building Make</h3>
+                  <p class="lead cardPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias
+                    iste. Accusantium?</p>
+                  <button class="myBtn">Read More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-4">
+              <div class="card text-white text-center bg-dark pb-2 ani_lightSpeedInLeft">
+                <div class="card-body">
+                  <div class="img-area mb-4">
+                    <img src="./img/project-3.jpg" class="img-fluid ani_headShake aniUtil_onMouse" alt="">
+                  </div>
+                  <h3 class="card-title">Building Make</h3>
+                  <p class="lead cardPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias
+                    iste. Accusantium?</p>
+                  <button class="myBtn">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- project end -->
+
+
+    <!-- team start -->
+    <section class="container-fluid team">
+      <div class="row">
+        <div class="col-11 mx-auto max-width py-4">
+          <div class="row">
+            <div class="col-md-12">
+              <div class=" text-center pb-5 ani_bounceIn animate__slower	">
+                <h2>Our Team</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quo.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+
+              <div class="swiper py-5">
+                <div class="swiper-wrapper py-3" navigation="true" pagination="true" keyboard="true" mousewheel="true" css-mode="true">
+                  <!-- slide 1  -->
+                  <swiper-slide class="ani_zoomIn ">
+                    <div class="card text-center ">
+                      <div class="card-body">
+                        <img src="./img/team-1.jpg" alt="" class="img-fluid rounded-circle ani_zoomIn aniUtil_onMouse animate__slower">
+                        <h3 class="card-title py-2">Jane Wilson</h3>
+                        <p class="cardPara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse
+                          quibusdam.</p>
+                    
+                    
+                        <p class="socials">
+                         <a href=""> <i class="bi bi-twitter text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+
+                         <a href=""> <i class="bi bi-facebook text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+
+                         <a href=""> <i class="bi bi-linkedin text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+
+                         <a href=""> <i class="bi bi-instagram text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </swiper-slide>
+                  <!-- slide 1 end  -->
+                  <!-- slide 2  -->
+                  <swiper-slide class="ani_fadeInDown">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <img src="./img/team-2.jpg" alt="" class="img-fluid rounded-circle ani_zoomIn aniUtil_onMouse animate__slower">
+                        <h3 class="card-title py-2">Jack Wilson</h3>
+                        <p class="cardPara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse
+                          quibusdam.</p>
+                    
+                    
+                        <p class="socials">
+                         <a href=""> <i class="bi bi-twitter text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+
+                         <a href=""> <i class="bi bi-facebook text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+
+                         <a href=""> <i class="bi bi-linkedin text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+
+                         <a href=""> <i class="bi bi-instagram text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </swiper-slide>
+                  <!-- slide 2 end  -->
+                  <!-- slide 3  -->
+                  <swiper-slide class="ani_jackInTheBox">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <img src="./img/team-3.jpg" alt="" class="img-fluid rounded-circle ani_zoomIn aniUtil_onMouse animate__slower">
+                        <h3 class="card-title py-2">Sara John</h3>
+                        <p class="cardPara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse
+                          quibusdam.</p>
+                    
+                    
+                        <p class="socials">
+                         <a href=""> <i class="bi bi-twitter text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+
+                         <a href=""> <i class="bi bi-facebook text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+
+                         <a href=""> <i class="bi bi-linkedin text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+
+                         <a href=""> <i class="bi bi-instagram text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </swiper-slide>
+                  <!-- slide 3 end  -->
+                  <!-- slide 4  -->
+                  <swiper-slide class="ani_rotateInDownRight">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <img src="./img/team-4.jpg" alt="" class="img-fluid rounded-circle ani_zoomIn aniUtil_onMouse animate__slower">
+                        <h3 class="card-title py-2">Kate Merina</h3>
+                        <p class="cardPara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse
+                          quibusdam.</p>
+                    
+                    
+                        <p class="socials">
+                         <a href=""> <i class="bi bi-twitter text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+
+                         <a href=""> <i class="bi bi-facebook text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+
+                         <a href=""> <i class="bi bi-linkedin text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+
+                         <a href=""> <i class="bi bi-instagram text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </swiper-slide>
+                  <!-- slide 4 end  -->
+                  <!-- slide 5  -->
+                  <swiper-slide class="ani_rotateInDownRight">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <img src="./img/team-2.jpg" alt="" class="img-fluid rounded-circle ani_zoomIn aniUtil_onMouse animate__slower">
+                        <h3 class="card-title py-2">Filipo Haslino</h3>
+                        <p class="cardPara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse
+                          quibusdam.</p>
+                    
+                    
+                        <p class="socials">
+                         <a href=""> <i class="bi bi-twitter text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+
+                         <a href=""> <i class="bi bi-facebook text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+
+                         <a href=""> <i class="bi bi-linkedin text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+
+                         <a href=""> <i class="bi bi-instagram text-dark mx-1 ani_zoomIn aniUtil_onMouse animate__slower"></i> 
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </swiper-slide>
+                  <!-- slide 5 end  -->
+                  
+                </div>
+                <!-- slider button  -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- slider button end  -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- team end -->
+
+    <!-- contact start -->
+    <section class="container-fluid contact">
+      <div class="row">
+        <div class="col-11 mx-auto max-width py-4">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-header text-center pb-5 ani_zoomInLeft">
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Non, quo.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row m-0 ">
+            <div class="col-md-12 p-0 pt-4 pb-4">
+              <form action="#" class=" p-5 m-auto" autocomplete="off">
+                <div class="row p-5">
+                  <div class="col-md-12">
+                    <div class="mb-3 d-flex gap-2">
+                      <input class="form-control w-50 shadow-none ani_backInRight" placeholder="First Name" required="" type="text">
+                      <input class="form-control w-50 shadow-none ani_backInLeft" placeholder="Last Name" required="" type="text">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <input class="form-control shadow-none ani_bounceInDown" placeholder="Email" required="" type="email">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <textarea class="form-control shadow-none ani_bounceInUp" placeholder="Message" required="" rows="3"></textarea>
+                    </div>
+                  </div><button class="myBtn mt-3 ani_zoomInDown" type="button">Send Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact end -->
+
+    <!-- footer starts -->
+    <footer class="container-fluid contact bg-dark">
+      <div class="row">
+        <div class="col-11 mx-auto max-width p-4">
+        <p class="footerPara text-center m-0 ani_rubberBand animate__slower	">All Right Reserved By MohabbatRJ</p>
+      </div>
+      </div>
+    </footer>
+    <!-- footer ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- js files -->
+    <!-- bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!-- side menu -->
+    <script>
+      function openNav() {
+        document.getElementById("navigationSideBar").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("navigationSideBar").style.width = "0";
+      }
+    </script>
+   
+    <!-- animation for after scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/KodingKhurram/animate.css-dynamic@main/animate.min.js">
+    </script>
+
+    <!-- slider  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        spaceBetween: 10,
+        direction: 'horizontal',
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 320px
+          100: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 640px
+          990: {
+            slidesPerView: 3.5,
+          },
+          
+        },
+
+        autoplay: {
+          delay: 5000,
+          pauseOnMouseEnter: true,
+        },
+
+      });
+    </script>
+   
+  </body>
+</html>

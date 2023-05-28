@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+  --emb: "Lato";
+  --yel: #ffc107;
+  --bg: #f1fbff;
+  --light: #f8f9fa;
+  --bluish: #103141;
+  --dark: #333;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--dark);
+  font-family: 'Lato'sans-serif;
+  font-weight: 700;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+@media only screen and (max-width: 1370px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+.max-width {
+  max-width: 1400px;
+}
+
+/* general end */
+
+/* header */
+.headerShadow {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  background: var(--dark);
+}
+
+
+.headerContentWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoWrap {
+  font-size: 1.7rem;
+  transition: all 0.5s ease;
+}
+
+.logoWrap span, .logoWrap:hover {
+  color: var(--yel);
+}
+
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.headerNav li {
+  margin: 0 1rem;
+}
+
+.headerNav li a {
+  font-family: var(--emb);
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: all 0.1s linear;
+}
+
+.headerNav li a:hover {
+  color: var(--yel);
+}
+
+.myBtn {
+  text-decoration: none;
+  color: var(--dark);
+  background-color: var(--yel);
+  border: transparent;
+  padding: 0.4rem 1.7rem;
+  border-radius: 5px;
+  font-family: var(--emb);
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.2s linear;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.myBtn:hover {
+  color: var(--dark);
+  background-color: rgba(255, 193, 7, 0.8);
+}
+
+.navClose {
+  display: none;
+}
+
+.headerMenuBtn {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .headerMenuBtn {
+    display: inline-block;
+  }
+
+  .headerNav {
+    position: absolute;
+    width: 0%;
+    height: 100vh;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    justify-content: center;
+    background-color: var(--dark);
+    transition: all 0.3s linear;
+    overflow: hidden;
+  }
+
+  .headerNav li {
+    margin-bottom: 2rem;
+  }
+
+  .navClose {
+    display: inline-block;
+    position: absolute;
+    top: 0.6rem;
+    right: 2.7rem;
+    cursor: pointer;
+    color: #ffc107;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+}
+
+/* header end */
+
+.carousel-item {
+  max-height: 89vh;
+  width: 100%;
+  /* min-height: 300px; */
+}
+
+.carousel-caption {
+  bottom: 150px;
+  z-index: 2;
+}
+
+.carousel-caption h5 {
+  font-size: 4rem;
+}
+
+.carousel-caption p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  width: 60%;
+  margin: auto;
+}
+
+.slide, .carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-inner:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+
+/* about start*/
+.aboutText .aboutHead {
+  font-size: 3rem;
+}
+
+.aboutHead span {
+  color: var(--yel);
+  display: block;
+}
+
+.about .aboutPara {
+  font-weight: 600;
+}
+
+.aboutImg img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.aboutImg .animate__slower {
+  animation-duration: 30s !important;
+}
+
+
+
+/* about end */
+
+
+/* service start */
+.services .card-body i {
+  font-size: 4rem;
+}
+
+
+.services .card .cardPara, .project .card .cardPara {
+  padding: 0 3rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+/* service end */
+
+/* project start */
+.project .card {
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.project .card img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* project end */
+
+
+
+/* team start */
+
+
+.team .card-body i {
+  font-size: 20px;
+}
+
+.team .card-text {
+  font-weight: 400;
+}
+
+.team .card {
+  /* max-width: 25rem; */
+}
+
+.team .card .cardPara {
+  padding: 0 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.swiper {
+  position: relative;
+}
+
+.team .swiper-button-next {
+  position: absolute;
+  top: 1.5rem;
+  right: 0rem;
+  color: var(--dark);
+}
+
+.team .swiper-button-prev {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem !important;
+  left: auto;
+  color: var(--dark);
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 1.5rem !important;
+}
+
+.swiper {
+  width: 100%;
+  /* max-height: 300px; */
+  /* position: relative; */
+}
+
+.team .swiper swiper-slide {
+  /* position: relative; */
+  /* width: 29% !important; */
+  /* height: 80%; */
+}
+
+/* team end */
+
+
+/* contact start */
+
+form {
+  background-color: var(--bluish);
+  color: var(--dark);
+  border-radius: 10px;
+}
+
+.contact form input, .contact form textarea {
+  background: transparent;
+  border: 1px solid var(--yel);
+}
+
+.contact form input::placeholder, .contact form textarea::placeholder {
+  color: var(--bg);
+}
+
+form:focus-within {
+  background-color: var(--dark);
+}
+
+form:focus-within input, form:focus-within textarea {
+  color: var(--yel);
+}
+
+form:focus-within input::placeholder, form:focus-within textarea::placeholder {
+  color: var(--yel);
+}
+
+/* contact end */
+
+/* footer start */
+footer {
+  color: var(--yel);
+}
+
+/* footer end */
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+  .services .card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-caption {
+    bottom: 50px;
+    z-index: 2;
+    font-size: 0.9rem;
+  }
+
+  .carousel-caption h5 {
+    font-size: 2rem;
+
+  }
+
+  .aboutImg img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .project .card img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+}
